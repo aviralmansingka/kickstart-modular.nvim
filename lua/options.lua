@@ -3,6 +3,10 @@
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+vim.o.autochdir = true
+
+vim.o.guifont = 'FiraCode Nerd Font Mono:h16'
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -18,6 +22,7 @@ vim.opt.showmode = false
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
+-- TODO: Consider a clipboard plugin
 vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
@@ -49,6 +54,10 @@ vim.opt.splitbelow = true
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+vim.o.shiftwidth = 2
+vim.o.softtabstop = 2
+vim.o.tabstop = 2
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
