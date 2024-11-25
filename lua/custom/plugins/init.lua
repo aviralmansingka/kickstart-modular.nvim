@@ -8,5 +8,4 @@ return {
   require 'custom.plugins.lsp_signature',
   require 'custom.plugins.toggleterm',
   require 'custom.plugins.bufferline',
-  require 'custom.plugins.nvim-jdtls',
 }
